@@ -41,6 +41,16 @@ public class LunchBreakPoint {
 		if (now.getHour() == 13 && now.getMinute() == 38) {
 			try {
 				Runtime.getRuntime().exec("rundll32.exe user32.dll,LockWorkStation");
+				/*
+					rundll32.exe
+					Windows 운영체제에서 DLL(Dynamic Link Library)파일을 실행하는데 사용되는 유틸리티이다.
+				
+					user32.dll
+					Windows 사용자 인터페이스 및 그래픽 관련 함수를 제공하는 DLL 파일이다.
+				
+					LockWorkStation
+					작업세션을 잠그는데 사용되는 명령어이다.
+				*/
 				System.exit(0);
 
 			} catch (IOException e) {
